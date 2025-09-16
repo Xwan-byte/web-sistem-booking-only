@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan Paket — Eduwisata Kolah Banyu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="home.html" aria-label="Eduwisata Kolah Banyu Beranda">
+        <img src="assets/images/logo/LOGO PANJANG.png" alt="Logo Eduwisata Kolah Banyu" style="height: 40px;">
+      </a>
+      <nav class="nav">
+        <a href="home.html#paket">Paket Wisata</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Formulir Pemesanan</h2>
+        <p>Lengkapi detail pemesanan Anda di bawah ini.</p>
+      </header>
+      
+      <form id="bookingForm" class="form">
+        <div class="form-row">
+            <h3 id="paketTitle">Memuat nama paket...</h3>
+            <p>Harga dasar per orang: <strong id="paketPrice">Rp0</strong></p>
+        </div>
+        <hr class="form-divider">
+
+        <div id="workshopsRow" class="form-row" style="display: none;">
+          <label>Pilih Pelatihan Tambahan (Opsional)</label>
+          <div id="workshopsOptions" class="checkbox-group">
+            </div>
+          <p id="workshopRule" class="form-hint"></p>
+        </div>
+        
+        <div class="form-row-split">
+            <div class="form-row">
+                <label for="visitDate">Tanggal Kunjungan</label>
+                <input type="date" id="visitDate" required>
+            </div>
+            <div class="form-row">
+                <label for="numPeople">
+                  Jumlah Orang <span class="label-hint">(Minimal 10 orang)</span>
+                </label>
+                <input type="number" id="numPeople" value="1" min="1" required>
+            </div>
+        </div>
+        <hr class="form-divider">
+
+        <div class="total-price">
+            <h4>Total Harga:</h4>
+            <h3 id="totalPriceDisplay">Rp0</h3>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Lanjut ke Pembayaran</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>
+            <img src="assets/images/logo/LOGO EDUWISTA BULAT.png" alt="Logo Kolah Banyu">
+            Eduwisata Kolah Banyu
+          </h4>
+          <p>Paket wisata edukatif terbaik dengan pelayanan profesional, destinasi menarik, dan kenangan tak terlupakan.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Navigasi Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="home.html#paket">Paket Wisata</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="home.html#galeri">Galeri</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Hubungi Kami</h4>
+          <ul class="contact-info">
+            <li>📧 info@kolahbanyu.com</li>
+            <li>📞 +62 812-3456-7890</li>
+            <li>📍 Yogyakarta, Indonesia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Eduwisata Kolah Banyu. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="pemesanan.js"></script>
+</body>
+</html>

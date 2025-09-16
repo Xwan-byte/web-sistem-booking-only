@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran — Eduwisata Kolah Banyu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="home.html" aria-label="Eduwisata Kolah Banyu Beranda">
+        <img src="assets/images/logo/LOGO PANJANG.png" alt="Logo Eduwisata Kolah Banyu" style="height: 40px;">
+      </a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Pembayaran</h2>
+        <p>Selesaikan pesanan Anda dengan mengisi detail di bawah ini.</p>
+      </header>
+      
+      <div class="payment-layout">
+        <div class="booking-summary">
+            <h4>Ringkasan Pesanan</h4>
+            <div id="summaryContent">
+                </div>
+            <div class="summary-total">
+                <span>Total Pembayaran:</span>
+                <strong id="summaryTotal">Rp0</strong>
+            </div>
+        </div>
+
+        <form id="paymentForm" class="form">
+            <h4>Data Diri Pemesan</h4>
+            <div class="form-row">
+                <label for="fullName">Nama Lengkap</label>
+                <input type="text" id="fullName" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="contoh@email.com" required>
+            </div>
+            <div class="form-row">
+                <label for="whatsapp">No. WA</label>
+                <input type="tel" id="whatsapp" placeholder="081234567890" required>
+            </div>
+            <hr class="form-divider">
+
+            <h4>Metode Pembayaran</h4>
+            <div class="radio-group">
+                <label class="radio-item"><input type="radio" name="paymentMethod" value="cash" required> Cash (Pembayaran di lokasi wisata)</label>
+                <label class="radio-item"><input type="radio" name="paymentMethod" value="transfer" required> Transfer Bank (via Midtrans)</label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Konfirmasi Pembayaran</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  <script src="pembayaran.js"></script>
+</body>
+</html>
